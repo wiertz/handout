@@ -23,7 +23,7 @@
     header-ascent: 40%,
     header: [
       #set text(size: 0.9em)
-      #course-title, #course-term
+      #course-title, #course-term \
       #authors.map(a => [#a.name]).join(" & ")
       ]
   )
