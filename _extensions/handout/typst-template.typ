@@ -79,9 +79,9 @@
       "Präsentation": fa-person-chalkboard(),
       "Diskussion": fa-comments(),
       "Gespräch": fa-comments(),
-      "Einzelaufgabe": fa-person-dress(),
-      "Partneraufgabe": fa-user-group(),
-      "Gruppenaufgabe": fa-people-group(),
+      "Einzelarbeit": fa-person-dress(),
+      "Partnerarbeit": fa-user-group(),
+      "Gruppenarbeit": fa-people-group(),
       "Wiederholung": fa-repeat(),
     )
 
