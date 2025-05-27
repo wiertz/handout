@@ -21,7 +21,11 @@
     paper: "a4",
     margin: (top: 3cm, bottom: 2.5cm, left: 2.5cm, right: 3cm),
     header-ascent: 40%,
-    header: (course-title, course-term, authors.map(a => [#a.name]).join(" & ")).join(" | ")
+    header: [
+      #set text(size: 0.9em)
+      #course-title, #course-term
+      #authors.map(a => [#a.name]).join(" & ")
+      ]
   )
 
   set text(
