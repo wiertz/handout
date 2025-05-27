@@ -1,0 +1,1 @@
+Vorlage für die Erstellung von Handouts und Ablaufplänen mit quarto/typst.
