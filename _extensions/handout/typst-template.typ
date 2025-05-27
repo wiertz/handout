@@ -95,7 +95,8 @@
           [*#fa-bullseye()*], 
           grid.cell(
             colspan: 2,
-            x.goals.join(", ")
+            if type(x.goals) == array { x.goals.join(", ") }
+            else { x.goals }
           )
         )},
         ..if "material" in x {(

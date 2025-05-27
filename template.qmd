@@ -15,14 +15,12 @@ schedule:
   goals:
   - Interesse wecken
   - Erwartungen äußern
-  description: 
 - title: Erwartungen
   time: 15
   format: Einzelaufgabe
   material:
   - Moderationskarten
-  goals:
-  - Erwartungen formulieren und besprechen
+  goals: Erwartungen formulieren und besprechen
   description: |
     - T notieren Antworten zur Frage "Was muss erfüllt sein, damit dieses Seminar für Sie ein Erfolg war?" auf Karteikarten.
     - Karteikarten werden präsentiert und gruppiert.
