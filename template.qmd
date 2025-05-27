@@ -1,0 +1,46 @@
+---
+format: handout-typst
+title: Kursinformationen
+author: Dr. Thilo Wiertz
+course-title: Politische Geographie
+course-term: Sommersemester 2025
+date: 2025-05-19
+
+schedule:
+- title: Begrüßung und Einführung
+  time: 5
+  format: Präsentation
+  material: 
+  - Laptop & Beamer
+  goals:
+  - Interesse wecken
+  - Erwartungen äußern
+  description: 
+- title: Erwartungen
+  time: 15
+  format: Einzelaufgabe
+  material:
+  - Moderationskarten
+  goals:
+  - Erwartungen formulieren und besprechen
+  description: |
+    - T notieren Antworten zur Frage "Was muss erfüllt sein, damit dieses Seminar für Sie ein Erfolg war?" auf Karteikarten.
+    - Karteikarten werden präsentiert und gruppiert.
+    - D ordnet Erwartungen ein und fragt nach Ergänzungen.
+    - D hebt Karteikarten für spätere qualitative Evaluation auf.
+---
+
+## Informationen
+
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea **rebum**. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+
+## Folgende Formate werden im Ablaufplan mit einem Icon dargestellt
+
+- Impuls: fa-person-chalkboard()
+- Präsentation: fa-person-chalkboard()
+- Diskussion: fa-comments()
+- Gespräch: fa-comments()
+- Gruppenaufgabe: fa-people-group()
+- Einzelaufgabe: fa-person-dress()
+- Partnerarbeit: fa-user-group()
+- Wiederholung: fa-repeat()
