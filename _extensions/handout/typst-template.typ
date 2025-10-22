@@ -30,7 +30,8 @@
 
   set text(
     font: "Source Sans 3",
-    size: 11pt
+    size: 11.5pt,
+    lang: meta.at("lang", default: "de")
   )
 
   set par(
@@ -53,7 +54,7 @@
     it
   }
   show heading.where(level: 3): it => {
-    set text(size: 1em, weight: "semibold")
+    set text(size: 1em, weight: "semibold", fill: mycolor)
     it
   }
 
@@ -68,31 +69,45 @@
   doc
 
   if "schedule" in meta [
-    // #v(1em)
     #text(fill: mycolor, weight: "semibold")[== Sitzungsablauf]
     #set text(size: 0.9em)
     #set par(spacing: 0.55em)
-    // #text(fill: mycolor, size: 14pt, weight: "semibold")[Ablauf]
     #set par(spacing: 1.5em)
     #let formats = (
       "Impuls": fa-person-chalkboard(),
       "Präsentation": fa-person-chalkboard(),
+      "Referat": fa-person-chalkboard(),
       "Diskussion": fa-comments(),
       "Gespräch": fa-comments(),
+      "Interview": fa-comments(),
       "Einzelarbeit": fa-person-dress(),
       "Partnerarbeit": fa-user-group(),
       "Gruppenarbeit": fa-people-group(),
       "Wiederholung": fa-repeat(),
+      "Think-Pair-Share": fa-user-group(),
+      "Pause": fa-mug-hot(),
+      "Hinweis": fa-circle-info(),
+      "X-Minute-Paper": fa-pencil()
     )
 
     #for x in meta.schedule {
 
       grid(
-        columns: (30pt, 5fr, 2fr),
-        inset: (left: 0em, right: 0.5em, y: 0.5em),
+        columns: (25pt, 5fr, 2fr),
+        inset: (left: 0em, right: 0.3em, y: 0.5em),
         align: (left, left, right),
         grid.header(
-          [*#x.time'*], [*#x.title*], [*#x.format #formats.at(x.format, default: none)*],
+          repeat: false,
+          [*#x.time'*], [*#x.title*], if "format" in x {
+            if type(x.format) == array { 
+              let fs = x.format.map(y =>
+                [*#y #formats.at(y, default: none)*]
+              )
+              [#fs.join(", ")]
+            } else [
+              *#x.format #formats.at(x.format, default: none)*
+              ]
+          },
         ),
         grid.hline(stroke: 0.5pt + mycolor),
         ..if "goals" in x {(
@@ -107,7 +122,8 @@
           [*#fa-toolbox()*], 
           grid.cell(
             colspan: 2,
-            x.material.join(", ")
+            if type(x.material) == array { x.material.join(", ") }
+            else { x.material }
           )
         )},
         ..if "description" in x {(

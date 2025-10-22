@@ -1,6 +1,6 @@
 title: Handout
 author: Thilo Wiertz
-version: 1.0.0
+version: 1.1.0
 quarto-required: ">=1.7.0"
 contributes:
   formats:
