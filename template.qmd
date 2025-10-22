@@ -34,11 +34,17 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 
 ## Folgende Formate werden im Ablaufplan mit einem Icon dargestellt
 
-- Impuls: fa-person-chalkboard()
-- Präsentation: fa-person-chalkboard()
-- Diskussion: fa-comments()
-- Gespräch: fa-comments()
-- Gruppenaufgabe: fa-people-group()
-- Einzelaufgabe: fa-person-dress()
-- Partnerarbeit: fa-user-group()
-- Wiederholung: fa-repeat()
+- "Impuls": fa-person-chalkboard(),
+- "Präsentation": fa-person-chalkboard(),
+- "Referat": fa-person-chalkboard(),
+- "Diskussion": fa-comments(),
+- "Gespräch": fa-comments(),
+- "Interview": fa-comments(),
+- "Einzelarbeit": fa-person-dress(),
+- "Partnerarbeit": fa-user-group(),
+- "Gruppenarbeit": fa-people-group(),
+- "Wiederholung": fa-repeat(),
+- "Think-Pair-Share": fa-user-group(),
+- "Pause": fa-mug-hot(),
+- "Hinweis": fa-circle-info(),
+- "X-Minute-Paper": fa-pencil()
