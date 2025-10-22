@@ -68,7 +68,7 @@
   doc
 
   if "schedule" in meta [
-    #text(fill: mycolor, weight: "semibold")[== Sitzungsablauf]
+    #text(fill: mycolor, weight: "semibold")[== Ablauf]
     #set text(size: 0.9em)
     #set par(spacing: 0.55em)
     #set par(spacing: 1.5em)
