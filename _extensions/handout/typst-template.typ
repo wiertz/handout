@@ -15,16 +15,15 @@
   // set basic formatting
   import "@preview/fontawesome:0.5.0": *
 
-  let mycolor = rgb("#00a082")
+  let mycolor = rgb("#344A9A")
 
   set page(
     paper: "a4",
-    margin: (top: 3cm, bottom: 2.5cm, left: 2.5cm, right: 3cm),
+    margin: (top: 3cm, bottom: 2.5cm, left: 2.5cm, right: 2.5cm),
     header-ascent: 40%,
     header: [
       #set text(size: 0.9em)
-      #course-title, #course-term \
-      #authors.map(a => [#a.name]).join(" & ")
+      #course-title, #course-term, #authors.map(a => [#a.name]).join(" & ")
       ]
   )
 
